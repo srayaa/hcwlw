@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/qz_bg_setup"
+    tools:context=".HelpActivity" >
+
+       <include
+        android:id="@+id/i_titilebar"
+        layout="@layout/titlebar_main" />
+<!--        <include
+        android:id="@+id/i_footerbar"
+        layout="@layout/footerbar" /> -->
+        <ScrollView 
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/i_titilebar"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+			android:layout_marginRight="5dp"
+            android:layout_height="fill_parent">
+    <LinearLayout 
+        android:id="@+id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+            android:gravity="center"
+		android:focusable="true" android:focusableInTouchMode="true"
+        android:orientation="vertical">
+           
+    <TextView
+        android:id="@+id/gywm_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_normal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:text="关于我们" />
+    <TextView
+        android:id="@+id/hkzh_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_normal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:text="汇款账号" />
+    <LinearLayout 
+            android:id="@+id/hkzh_ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_pressed"
+        android:visibility="gone"
+        android:gravity="center">
+    <TextView 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="@color/purple"
+        android:text="5264 1025 2010 8949"
+        />
+	</LinearLayout>
+	<LinearLayout 
+        android:id="@+id/hkzh_ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_pressed"
+        android:visibility="gone"
+        android:gravity="center">
+    <TextView 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="@color/purple"
+        android:text="宏昌物流"
+        />
+	</LinearLayout>
+    <TextView
+        android:id="@+id/bzfk_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_normal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:text="帮助反馈" />
+        <LinearLayout 
+            android:id="@+id/refeed1_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_pressed"
+        android:visibility="gone"
+        android:gravity="center">
+    <EditText 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="false"
+        />
+	</LinearLayout>
+    <LinearLayout 
+            android:id="@+id/refeed2_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_pressed"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        android:gravity="center">
+        <Button 
+            android:id="@+id/btn_sub"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/button_selector"
+            android:text="提交"/>
+    </LinearLayout>
+     <TextView
+        android:id="@+id/update_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_normal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:text="软件升级" />
+  <!--   <ScrollView 
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+    <TextView
+        android:id="@+id/gywm_txt_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_bottom_normal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="false"
+        android:visibility="visible"
+        android:text="中国物连网自成立以来，始终致力于缔造全球最专业的中文网上物流园，为所有需要物流和提供物流的客户，搭建了一个物流信息发布和交流的平台，真正实现“客户零见面，交易更方便”的网上轻松交易理念。\n
+　　中国物连网是现代物流管理的网络资讯平台，既是实现规范化管理和业务操作的资讯系统，也是为物流客户、联盟伙伴、物流资源等提供连接、管理和服务的门户。它将现代物流管理模式和先进的资讯技术有机结合，建立全新的以客户服务为中心的经营体系，创造企业在网络环境下的竞争优势，打造以现代综合物流服务为主体的供应链。\n
+　　中国物连网每天为会员提供最新的物流供求信息、货盘信息、报价信息、货运专线、企业库和物流资讯。物流企业和货主企业通过信息发布和交流，让更多的物流供需双方轻松找到对方，为物流企业和货主企业提供了高效率、低成本的 物流服务。各种货盘信息、海运、综合物流、仓储、商检报关及快递等分类物流信息，实现资源共享，促使物流与货源的有效配对，为企业创造更多商机、更多财富。\n
+　　加入中国物连网，充分享用互联网资源，体验真正意义上的物流和商贸的互动，实现市场扩展和利润增长。" />
+    	</ScrollView> -->
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
