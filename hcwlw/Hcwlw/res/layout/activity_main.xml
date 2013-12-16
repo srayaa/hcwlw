@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+       <include
+        android:id="@+id/i_titilebar"
+        layout="@layout/titlebar_main" />
+<!--        <include
+        android:id="@+id/i_footerbar"
+        layout="@layout/footerbar" /> -->
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/i_titilebar"
+        android:background="#FFFFE0"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal" >
+		    <TableLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="110dp"
+		        android:layout_marginLeft="6dp"
+		        android:layout_marginRight="6dp"
+		        android:layout_marginTop="9dp"
+		        android:layout_marginBottom="9dp"
+		        android:padding="3dp"
+		        android:layout_gravity="center_horizontal"
+		        >
+		        <TableRow
+		        	android:background="@color/lightgray"
+		            android:layout_margin="1dp"
+		            android:layout_height="51dp"
+		            android:paddingLeft="15dp"
+		            android:paddingTop="3dp"
+		            >
+		            <Button 
+		                android:id="@+id/btn_navi"
+		                android:layout_width="45dp"
+		                android:layout_height="45dp"
+		                android:background="@drawable/main_selector_navi"
+		                android:contentDescription="navi"
+		                
+		                />
+		            <TextView 
+		                android:layout_width="85dp"
+		                android:layout_height="45dp"
+		                android:textColor="@color/black"
+		                android:text="导航"
+		                />
+					<ImageButton
+            			android:layout_width="2dp"
+            			android:layout_height="fill_parent"
+            			android:background="@color/white" />
+		            <Button 
+		                android:id="@+id/btn_toolbox"
+		                android:layout_width="45dp"
+		                android:layout_height="45dp"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/main_selector_toolbox"
+		                android:contentDescription="toolbox"
+		                />
+		            <TextView 
+		                android:layout_width="125dp"
+		                android:layout_height="45dp"
+		                android:textColor="@color/black"
+		                android:text="工具箱"
+		                />
+		        </TableRow>
+		        <TableRow
+		        android:background="@color/lightgray"
+		            android:layout_margin="1dp"
+		            android:layout_height="51dp"
+		            android:paddingLeft="15dp"
+		            android:paddingBottom="3dp">
+		            <Button 
+		                android:id="@+id/btn_xxcx"
+		                android:layout_width="45dp"
+		                android:layout_height="45dp"
+		                android:background="@drawable/main_selector_xxcx"
+		                android:contentDescription="xxcx"
+		                
+		                />
+		            <TextView 
+		                android:layout_width="85dp"
+		                android:layout_height="45dp"
+		                android:text="信息查询"
+		                android:textColor="@color/black"
+		                />
+		            <ImageButton
+            			android:layout_width="2dp"
+            			android:layout_height="fill_parent"
+            			android:background="@color/white" />
+		            <Button 
+		                android:id="@+id/btn_wlrx"
+		                android:layout_width="45dp"
+		                android:layout_height="45dp"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/main_selector_wlrx"
+		                android:contentDescription="wlrx"
+		                />
+		            <LinearLayout 
+		                android:orientation="vertical"
+		                android:paddingTop="10dp">
+		            <TextView 
+		                android:layout_width="125dp"
+		                android:layout_height="18dp"
+		                android:textColor="@color/black"
+		                android:singleLine="false"
+		                android:text="物流热线"
+		                />
+		            <TextView 
+		                android:layout_width="125dp"
+		                android:layout_height="12dp"
+		                android:textColor="@color/black"
+		                android:singleLine="false"
+		                android:textSize="9dp"
+		                android:text="400-033-5656"
+		                />
+		            </LinearLayout>
+		        </TableRow>
+		    </TableLayout>
+			<TableLayout 
+			    android:id="@+id/us_panel"
+			    android:layout_width="fill_parent"
+			    android:layout_height="270dp"
+			    >
+			    <TableRow 
+			        android:background="@drawable/main_bg_row1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="45dp">
+			        
+			    </TableRow>
+			    <TableRow >
+			        	<Button 
+			        	    android:id="@+id/btn_zcy"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/main_selector_zcy"
+		                android:contentDescription="zcy"
+		                android:layout_marginLeft="58dp"
+		                />
+			        	<Button 
+			        	    android:id="@+id/btn_zhy"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/main_selector_zhy"
+		                android:contentDescription="zhy"
+		                android:layout_marginLeft="22dp"
+		                />
+			    </TableRow>
+			    <TableRow 			        
+			        android:background="@drawable/main_bg_row2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="45dp">
+			        
+			    </TableRow>
+			    <TableRow >
+			        	<Button 
+			        	    android:id="@+id/btn_fbhy"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/main_selector_fbhy"
+		                android:contentDescription="zcy"
+		                android:layout_marginLeft="58dp"
+		                />
+			        	<Button 
+			        	    android:id="@+id/btn_fbcy"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/main_selector_fbcy"
+		                android:contentDescription="zhy"
+		                android:layout_marginLeft="22dp"
+		                />
+			    </TableRow>
+
+			</TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

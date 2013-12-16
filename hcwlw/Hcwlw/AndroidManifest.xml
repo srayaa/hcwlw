@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hcwlw"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- android:name="com.hcwlw.DemoApplication" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher3"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+
+        <!-- android:theme="@style/AppTheme" > -->
+        <activity
+            android:name="com.hcwlw.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.StartupActivity"
+            android:label="@string/title_activity_startup" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.LoginActivity"
+            android:label="登录"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.SplashActivity"
+            android:label="中国物连网"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hcwlw.MemberCenterActivity"
+            android:label="@string/title_activity_member_center" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.MyinfoActivity"
+            android:label="@string/title_activity_myinfo" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+
+        <!--
+             <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >        </service>
+        -->
+
+        <activity
+            android:name="com.hcwlw.NaviActivity"
+            android:label="@string/title_activity_navi" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.ToolboxActivity"
+            android:label="@string/title_activity_toolbox" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.XxcxActivity"
+            android:label="@string/title_activity_xxcx" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.ZcyActivity"
+            android:label="@string/title_activity_zcy" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.ZhyActivity"
+            android:label="@string/title_activity_zhy" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.FbhyActivity"
+            android:label="@string/title_activity_fbhy" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.FbcyActivity"
+            android:label="@string/title_activity_fbcy" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.MainTabActivity"
+            android:label="@string/title_activity_main_tab" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.PicWallActivity"
+            android:label="@string/title_activity_pic_wall" >
+        </activity>
+        <activity
+            android:name="com.hcwlw.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest>

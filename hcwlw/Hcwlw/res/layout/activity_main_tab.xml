@@ -1,0 +1,71 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_foot"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bg_footbar"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/btn_home"
+                        style="@style/tab_style"
+                        android:layout_marginTop="2.0dip"
+                        android:drawableTop="@drawable/footer_main"
+                        android:text="主页" />
+
+                    <RadioButton
+                        android:id="@+id/btn_myinfo"
+                        style="@style/tab_style"
+                        android:layout_marginTop="2.0dip"
+                        android:drawableTop="@drawable/footer_myinfo"
+                        android:text="我的信息" />
+
+                    <RadioButton
+                        android:id="@+id/btn_membercenter"
+                        style="@style/tab_style"
+                        android:layout_marginTop="2.0dip"
+                        android:drawableTop="@drawable/footer_memcenter"
+                        android:text="会员中心" />
+
+                    <RadioButton
+                        android:id="@+id/btn_help"
+                        style="@style/tab_style"
+                        android:layout_marginTop="2.0dip"
+                        android:drawableTop="@drawable/footer_help"
+                        android:text="帮助" />
+                </RadioGroup>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>

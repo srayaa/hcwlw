@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/qz_bg_setup"
+    tools:context=".SettingsActivity" >
+
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+		android:layout_margin="10dp"
+        android:gravity="center_horizontal">
+        
+    
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:gravity="center"
+		    android:background="@drawable/qz_bg_container_cell_top_normal"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+		    android:text="主页面样式选择"/>
+		
+		<RadioGroup 
+		    android:id="@+id/jmxz"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:orientation="horizontal"
+		    android:background="@drawable/qz_bg_container_cell_bottom_normal"
+		    android:showDividers="middle">
+		    
+		    <RadioButton 
+		        android:id="@+id/morenjiemian"
+		        android:text="默认"
+		        android:textColor="@color/darkblue"
+		        android:checked="true"
+		        />
+		    <RadioButton 
+		        android:id="@+id/win8style"
+		        android:text="win8"
+		        android:textColor="@color/darkblue"
+		        android:checked="false"
+		        />
+		    <RadioButton 
+		        android:id="@+id/gridstyle"
+		        android:text="网格"
+		        android:textColor="@color/darkblue"
+		        android:checked="false"
+		        />
+		    
+		</RadioGroup>
+		
+		
+	</LinearLayout>
+</RelativeLayout>

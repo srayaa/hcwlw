@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qz_bitmap_login"
+    tools:context=".MemberCenterActivity" >
+
+    <include
+        android:id="@+id/i_titilebar"
+        layout="@layout/titlebar_main" />
+    <!--
+            <include
+        android:id="@+id/i_footerbar"
+        layout="@layout/footerbar" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/i_titilebar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/qz_bg_container_cell_normal"
+            android:orientation="horizontal" >
+			<ImageView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/qzone_img_icon_visitor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:text="欢迎您 尊敬的用户：王捷航" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/list_blockbg_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.hcwlw.lib.GifView
+                    android:id="@+id/gif2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:id="@+id/picShare"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="图片分享" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/prefresh_list_cutline" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_blockbg_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView 
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:src="@drawable/emoji_146"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="15dp"
+            android:text="我的关注" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
